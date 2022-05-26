@@ -7,6 +7,12 @@
 4. Smaller peak ~21 nt also mapped to CDS
 5. 29 nt reads show strong stop codon
 6. Best still 28 nt  
+7. Code for analysis and visualization
+
+
+
+
+
 
 
 
