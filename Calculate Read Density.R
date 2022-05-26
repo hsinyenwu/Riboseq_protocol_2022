@@ -69,7 +69,7 @@ dfRoot <- data.frame(total_read=NUM, distinct_p_site=RootChr1Cdf,Samples="At_Roo
 dfShoot <- data.frame(total_read=NUM, distinct_p_site=ShootChr1Cdf,Samples="At_Shoot")
 
 df <- rbind(dfNEB,dfCTRL,dfRoot,dfShoot)
-save(df,"~/Desktop/readDiversity.RData")
+save(df,file="~/Desktop/readDiversity.RData")
 df$distinct_p_site <- df$distinct_p_site/1000000
 p3 <- ggplot(df, aes(x=total_read,y=distinct_p_site, colour = Samples)) +
   geom_line(aes(color=Samples),size=0.7) +
