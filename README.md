@@ -15,7 +15,14 @@
 3. Sort and index
 4. RiboTaper analysis
 5. Plot several genes
-6. ORFquant analysis?
+6. RiboseQC output
+7. ORFquant analysis?
+
+### Figures:
+1. Workflow for experiment and analysis
+2. Meta plot (28 nt and 21 nt), read length distribution, read feature distribution, read P-site coverage, per frame coverage
+3. Table: number of genes identified in NEB vs CTRL vs Root vs Shoot data
+4. uORF and sORF overlap between NEB and CTRL, Gene examples
 
 
 
