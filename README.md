@@ -9,6 +9,10 @@
 6. Best still 28 nt  
 7. Code for analysis and visualization
 
+#### Where is the code?
+Linux: 
+Mac:
+
 #### What to do?
 1. Bam files select reads from 25 to 30 nts
 2. Get same read numbers
