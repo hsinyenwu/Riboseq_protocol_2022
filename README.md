@@ -21,6 +21,7 @@ Mac:
 5. Plot several genes
 6. RiboseQC output
 7. ORFquant analysis?
+8. Correlation between samples
 
 ### Figures:
 1. Workflow for experiment and analysis
