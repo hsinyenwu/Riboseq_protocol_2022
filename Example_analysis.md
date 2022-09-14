@@ -1,5 +1,5 @@
 ## Note:
-1. This github page is for the [A custom library construction method for super-resolution ribosome profiling in Arabidopsis](https://www.biorxiv.org/content/10.1101/2022.07.14.499987v1.abstract) paper. Although the paper is about how to create Ribo-seq library. We provide a simple pipeline for the quality control. Please cite our paper if you find the information provided here is useful.  
+1. This github repository is for the [A custom library construction method for super-resolution ribosome profiling in Arabidopsis](https://www.biorxiv.org/content/10.1101/2022.07.14.499987v1.abstract) paper. Although this paper is about how to create Ribo-seq library. We provide a simple pipeline for the quality control. Please cite our paper if you find the information provided here is useful.  
 2. You can run your code on locally (PC/Mac), linux server or linux cluster with properly installed/loaded software packages.  
 3. You have to decide the $INPUT and $OUTPUT for each step.  
 4. Here we provide a small example from the sample NEB1. The FASTA and transcriptome GTF files can be obtained from [TAIR](https://www.arabidopsis.org). Use Chrome browser. Connect as guest.  
@@ -88,7 +88,7 @@ STAR --runThreadN 10 \
 
 library(Biostrings)
 library(rtracklayer)
-library(RiboseQC)
+library(RiboseQC) #please run with R (v. 4.1.3) or lower. There is a known issue for RiboseQC (from the GenomicFeatures package) when running with newer version of R.
 
 At_genome_seqs <- Biostrings::readDNAStringSet("~/Desktop/Ribo_example/TAIR10_chr_all_2.fas") 
 At_genome_seqs <- replaceAmbiguities(At_genome_seqs)
