@@ -1,5 +1,6 @@
 You can run your code on locally (PC/Mac), linux server or linux cluster with properly installed/loaded software packages.  
-You have to decide the $INPUT and $OUTPUT for each step.  
+You have to decide the $INPUT and $OUTPUT for each step. 
+The FASTA and transcriptome GTF files can be obtained from [TAIR](ftp://ftp.arabidopsis.org/home/tair) 
 
 ### Prepare example file from the sequencing file
 The NEB1.fastq.gz is available on NCBI SRA BioProject ID PRJNA854638 after the project is published.
