@@ -31,7 +31,7 @@ bowtie2-build $CF/Araport11_contam5.fa Contam5
 ### Step 3b code (Bowtie2: remove contamination sequences)
 ```
 #$Contam5 is the directory with the index for the contamination sequences 
-bowtie2 -L 20 -p 8 -x $Contam5 $INPUT/NEB1.h1M.trim.fastq --un-gz $OUTPUT/NEB1.noContam5.fastq.gz
+bowtie2 -L 20 -p 8 -x $Contam5 $INPUT/NEB1.h1M.trim.fastq --un-gz $OUTPUT/NEB1.h1M.trim.noContam5.fastq.gz
 ```
 
 ### Step 4a code (STAR: create genome/transcriptome index for STAR)
