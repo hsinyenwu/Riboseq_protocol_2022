@@ -1,5 +1,5 @@
-You can run your code on locally (PC/Mac), linux server or cluster with properly installed/loaded software packages.
-You have to decide the $INPUT and $OUTPUT for each step.
+You can run your code on locally (PC/Mac), linux server or cluster with properly installed/loaded software packages.  
+You have to decide the $INPUT and $OUTPUT for each step.  
 
 ### Prepare example file from the sequencing file
 The NEB1.fastq.gz is available on NCBI SRA BioProject ID PRJNA854638 after the project is published.
