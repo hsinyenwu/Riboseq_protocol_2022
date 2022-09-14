@@ -1,4 +1,4 @@
-#Step 1 code (FASTQC for quality check):
+### Step 1 code (FASTQC for quality check):
 #Run in linux server or cluster
 #$OUTPUT output directory
 #The code below is to check all .gz file in the directory
