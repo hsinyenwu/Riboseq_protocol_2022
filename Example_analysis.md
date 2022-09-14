@@ -53,15 +53,14 @@ STAR --runThreadN 12 \
 
 ### Step 4b code (STAR mapping)
 ```
-#Run in linux server or cluster
-#$starIndex1 is the directory contain FASTA files
-#$INPUT is the directory with the NEB123.noContam5.fastq.gz file
+#$starIndex is the directory contain index files
+#$INPUT is the directory with the NEB1.h1M.trim.noContam5.fastq.gz file
 #$OUTPUT is the output directory
 
 STAR --runThreadN 10 \
---genomeDir $starIndex1 \
+--genomeDir $starIndex \
 --readFilesCommand zcat \
---readFilesIn $INPUT/NEB123.noContam5.fastq.gz \
+--readFilesIn $INPUT/NEB1.h1M.trim.noContam5.fastq.gz \
 --alignIntronMax 5000 \
 --alignIntronMin 15 \
 --outFilterMismatchNmax 1 \
@@ -73,8 +72,13 @@ STAR --runThreadN 10 \
 --quantMode TranscriptomeSAM \
 --outSAMmultNmax 1 \
 --outMultimapperOrder Random \
---outFileNamePrefix "star_ribo_NEB123" \
+--outFileNamePrefix "star_ribo_NEB1_h1M" \
 ```
+
+
+
+
+
 
 
 
