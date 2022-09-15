@@ -6,9 +6,9 @@
 5. This is beyond the scope of the paper, but more info about downstream analysis of Riboseq can be found [here](https://github.com/hsinyenwu/Ribo-seq-informatics-2022). 
 
 ### Prepare example file from the sequencing file
-The NEB1.fastq.gz is available on NCBI SRA BioProject ID PRJNA854638 after the project is published. We selected the first 0.5 million reads as the example.  
+The NEB1.fastq.gz is available on NCBI SRA BioProject ID PRJNA854638 after the project is published. We selected the first 125000 reads as the example.   
 ```
-zcat NEB1.fastq.gz | head -1000000 > NEB1.halfM.fastq.gz #Extract first 0.5 million lines
+zcat NEB1.fastq.gz | head -500000 > NEB1.halfM.fastq.gz #Extract first 0.5 million lines, 4 lines of a fasta is one sequencing read.
 ```
 
 ### Step 1 code (FASTQC for quality check):
@@ -88,7 +88,8 @@ STAR --runThreadN 10 \
 
 library(Biostrings)
 library(rtracklayer)
-library(RiboseQC) #please run with R (v. 4.1.3) or lower. There is a known issue for RiboseQC (from the GenomicFeatures package) when running with newer version of R.
+library(RiboseQC) 
+#If run with > R (v. 4.2), there is a known issue for RiboseQC (from the GenomicFeatures package). A modified version of RiboseQC is available [here](https://github.com/hsinyenwu/RiboseQC_R4.2.1/blob/master/R/riboseqc.R). Use ```install_github(repo = "hsinyenwu/RiboseQC_R4.2.1")``` then load the package with ```library(RiboseQC)```.
 
 At_genome_seqs <- Biostrings::readDNAStringSet("~/Desktop/Ribo_example/TAIR10_chr_all_2.fas") 
 At_genome_seqs <- replaceAmbiguities(At_genome_seqs)
