@@ -1,7 +1,7 @@
 ## Note:
 1. This github repository is for the [A custom library construction method for super-resolution ribosome profiling in Arabidopsis](https://www.biorxiv.org/content/10.1101/2022.07.14.499987v1.abstract) paper. Although this paper is about how to create Ribo-seq library. We provide a simple pipeline for the quality control. Please cite our paper if you find the information provided here is useful.  
 2. You can run your code on locally (PC/Mac), linux server or linux cluster with properly installed/loaded software packages.  
-3. You have to decide the $INPUT and $OUTPUT for each step.  
+3. You have to decide the $INPUT and $OUTPUT paths for each step.  
 4. Here we provide a small example from the sample NEB1. The FASTA and transcriptome GTF files can be obtained from [TAIR](https://www.arabidopsis.org). Use Chrome browser. Connect as a guest.  
 5. This is beyond the scope of the paper, but more info about downstream analysis of Riboseq can be found [here](https://github.com/hsinyenwu/Ribo-seq-informatics-2022). 
 
