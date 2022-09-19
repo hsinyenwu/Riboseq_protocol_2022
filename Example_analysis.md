@@ -8,7 +8,7 @@
 ### Prepare example file from the sequencing file
 The NEB1.fastq.gz is available on NCBI SRA BioProject ID PRJNA854638 after the project is published. We selected the first 125000 reads as the example.   
 ```
-zcat NEB1.fastq.gz | head -500000 > NEB1.halfM.fastq.gz #Extract first 0.5 million lines, 4 lines of a fasta is one sequencing read.
+zcat NEB1.fastq.gz | head -500000 > NEB1.halfM.fastq.gz #Extract first 125000 reads i.e., 0.5 million lines, 4 lines of a fasta is one sequencing read.
 ```
 
 ### Step 1 code (FASTQC for quality check):
