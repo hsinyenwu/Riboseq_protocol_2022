@@ -3,7 +3,7 @@
 2. You can run the code on locally (PC/Mac), linux server or linux cluster with properly installed/loaded software packages.  
 3. You have to decide the $INPUT and $OUTPUT paths for each step.  
 4. Here we provide a small example from the sample NEB1. The FASTA and transcriptome GTF files can be obtained from [TAIR](https://www.arabidopsis.org). Use Chrome browser. Connect as a guest.  
-5. This is beyond the scope of the paper, but more info about downstream analysis of Riboseq can be found [here](https://github.com/hsinyenwu/Ribo-seq-informatics-2022). For visualizing the Ribo-seq reads on individual transcripts, please try out [RiboPlotR](https://github.com/hsinyenwu/RiboPlotR).
+5. This is beyond the scope of the paper, but more info about downstream analysis of Riboseq can be found [HERE](https://github.com/hsinyenwu/Ribo-seq-informatics-2022). For visualizing the Ribo-seq reads on individual transcripts, please try out [RiboPlotR](https://github.com/hsinyenwu/RiboPlotR).
 
 ### Prepare example file from the sequencing file
 The NEB1.fastq.gz is available on NCBI SRA BioProject ID PRJNA854638 after the project is published. We selected the first 125000 reads as the example.   
